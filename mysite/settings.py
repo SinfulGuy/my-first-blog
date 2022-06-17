@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog'
+    'blog',
+    'logins',
+    'crispy_forms',
+    'django_seed',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +129,16 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Email variables
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'fil.belski@gmail.com'
+EMAIL_HOST_PASSWORD = 'snsjaiyicabikuiv'
+RECIPIENT_ADDRESS = 'sinfulguy9@gmail.com'
+
+# Crispy
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
